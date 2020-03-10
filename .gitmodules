@@ -1,0 +1,15 @@
+[submodule "pack/theme/start/gruvbox"]
+	path = pack/theme/start/gruvbox
+	url = https://github.com/morhetz/gruvbox
+[submodule "pack/plugin/start/nerdtree"]
+	path = pack/plugin/start/nerdtree
+	url = https://github.com/preservim/nerdtree
+[submodule "pack/tool/start/ale"]
+	path = pack/tool/start/ale
+	url = https://github.com/dense-analysis/ale
+[submodule "pack/tool/vim-clang-format"]
+	path = pack/tool/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format
+[submodule "pack/plugin/start/lightline"]
+	path = pack/plugin/start/lightline
+	url = https://github.com/itchyny/lightline.vim

@@ -8,7 +8,7 @@
 	path = pack/tool/start/ale
 	url = https://github.com/dense-analysis/ale
 [submodule "pack/tool/vim-clang-format"]
-	path = pack/tool/vim-clang-format
+	path = pack/tool/start/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format
 [submodule "pack/plugin/start/lightline"]
 	path = pack/plugin/start/lightline

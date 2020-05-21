@@ -3,6 +3,8 @@
 ## Dependency
 - Vim (at least version 8)
 - Git
+- Clang Format (for Vim-Clang-Format plugin)
+- Font Awesome
 
 ## Plugin
 - [LightLine](https://github.com/itchyny/lightline.vim)

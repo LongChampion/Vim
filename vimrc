@@ -31,6 +31,7 @@ set encoding=utf-8
 set mouse=a
 set background=dark
 set cursorline
+set cursorlineopt=number,screenline
 set number
 set relativenumber
 
@@ -52,6 +53,7 @@ set nowrap
 "Theme: gruvbox"
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
+highlight CursorLineNr cterm=bold ctermbg=240
 
 "ale"
 let g:ale_sign_column_always = 1
@@ -77,18 +79,21 @@ let g:clang_format#style_options = { "BasedOnStyle": "LLVM", "Language": "Cpp", 
 
 "=== Key Mapping ==="
 "NERDTree"
-map <F1> :NERDTreeToggle<CR>
+map <silent> <F1> :NERDTreeToggle<CR>
+
+"Toggle wrapping"
+map <silent> <F2> :set wrap!<CR>
 
 "Toggle highlight search"
-map <F3> :set hlsearch!<CR>
+map <silent> <F3> :set hlsearch!<CR>
 
 "Toogle tab-to-space"
-map <F4> :set expandtab!<CR>
+map <silent> <F4> :set expandtab!<CR>
 
 "ale"
-map <F5> :ALEPrevious<CR>
-map <F6> :ALENext<CR>
+map <silent> <F5> :ALEPrevious<CR>
+map <silent> <F6> :ALENext<CR>
 
 "Trim space at end of line"
-map <F9> :%s/\s\+$//e<CR>
+map <silent> <F9> :%s/\s\+$//e<CR>
 

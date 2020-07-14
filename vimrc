@@ -59,15 +59,15 @@ highlight CursorLineNr cterm=bold ctermbg=240
 let g:ale_sign_column_always = 1
 let g:ale_lint_on_text_changed = 1
 let g:ale_linters_explicit = 1
-let g:ale_linters = {'cpp': ['gcc', 'clang']}
+let g:ale_linters = {'c': ['gcc', 'clang'], 'cpp': ['gcc', 'clang']}
 let g:ale_cpp_gcc_options = '-std=c++17 -Wall -Wextra -Wpedantic'
 let g:ale_cpp_clang_options = '-std=c++17 -Weverything'
 let g:ale_echo_msg_error_str = 'Error'
 let g:ale_echo_msg_warning_str = 'Warning'
 let g:ale_echo_msg_format = '[%linter%] [%severity%] %s'
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
-let g:ale_sign_info = ''
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
+let g:ale_sign_info = ''
 
 "vim-clang-format"
 let g:clang_format#auto_format = 1

@@ -8,7 +8,6 @@ set ttimeoutlen=60
 
 "=== Indention Options ==="
 set autoindent
-set expandtab
 set smartindent
 set smarttab
 set tabstop=4
@@ -76,21 +75,20 @@ let g:clang_format#style_options = { "BasedOnStyle": "LLVM", "Language": "Cpp", 
 
 
 
-"=== Autorun Commands ==="
-"Auto load NERDTree at startup"
-autocmd VimEnter * NERDTree
-
-
-
 "=== Key Mapping ==="
+"NERDTree"
+map <F1> :NERDTreeToggle<CR>
+
+"Toggle highlight search"
 map <F3> :set hlsearch!<CR>
 
-"Trim space at end of line"
-map <C-S-t> :%s/\s\+$//e
-
-"NERDTree"
-map <C-e> :NERDTreeToggle<CR>
+"Toogle tab-to-space"
+map <F4> :set expandtab!<CR>
 
 "ale"
 map <F5> :ALEPrevious<CR>
 map <F6> :ALENext<CR>
+
+"Trim space at end of line"
+map <F9> :%s/\s\+$//e<CR>
+

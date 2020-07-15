@@ -65,9 +65,9 @@ let g:ale_cpp_clang_options = '-std=c++17 -Weverything'
 let g:ale_echo_msg_error_str = 'Error'
 let g:ale_echo_msg_warning_str = 'Warning'
 let g:ale_echo_msg_format = '[%linter%] [%severity%] %s'
-let g:ale_sign_error = ''
-let g:ale_sign_warning = ''
-let g:ale_sign_info = ''
+let g:ale_sign_error = ''
+let g:ale_sign_warning = ''
+let g:ale_sign_info = ''
 
 "vim-clang-format"
 let g:clang_format#auto_format = 1
@@ -77,6 +77,8 @@ let g:clang_format#style_options = { "BasedOnStyle": "LLVM", "Language": "Cpp", 
 
 "vim-gitgutter"
 let g:gitgutter_map_keys = 0
+let g:gitgutter_async = 0
+let g:gitgutter_preview_win_floating = 1
 
 
 
@@ -108,4 +110,10 @@ map <silent> <F9> :%s/\s\+$//e<CR>
 map <silent> <F10> :GitGutterStageHunk<CR>
 map <silent> <F11> :GitGutterUndoHunk<CR>
 map <silent> <F12> :GitGutterPreviewHunk<CR>
+
+
+
+"=== AUTORUN COMMAND ==="
+autocmd InsertLeave * GitGutter
+autocmd TextChanged * GitGutter
 

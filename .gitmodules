@@ -18,3 +18,7 @@
 	path = pack/tool/start/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format
 	shallow = true
+[submodule "pack/plugin/start/vim-gitgutter"]
+	path = pack/plugin/start/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+	shallow = true

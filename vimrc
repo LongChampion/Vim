@@ -53,7 +53,7 @@ set nowrap
 "Theme: gruvbox"
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
-highlight CursorLineNr cterm=bold ctermbg=240
+highlight CursorLineNr cterm=bold ctermbg=240 ctermfg=14
 
 "ale"
 let g:ale_sign_column_always = 1
@@ -75,6 +75,9 @@ let g:clang_format#auto_format_on_insert_leave = 1
 let g:clang_format#command = '/usr/bin/clang-format'
 let g:clang_format#style_options = { "BasedOnStyle": "LLVM", "Language": "Cpp", "Standard": "Latest", "AccessModifierOffset": -2, "AlignConsecutiveAssignments": "true", "AlignConsecutiveMacros": "true", "AlignEscapedNewlines": "Left", "AlignTrailingComments": "true", "AllowShortBlocksOnASingleLine": "Always", "AllowShortCaseLabelsOnASingleLine": "true", "AllowShortFunctionsOnASingleLine": "All", "AllowShortIfStatementsOnASingleLine": "true", "AllowShortLoopsOnASingleLine": "true", "AlwaysBreakAfterReturnType": "None", "BreakBeforeBraces": "Allman", "BreakStringLiterals": "false", "ColumnLimit": 0, "ContinuationIndentWidth": 4, "Cpp11BracedListStyle": "true", "DeriveLineEnding": "false", "DerivePointerAlignment": "false", "FixNamespaceComments": "true", "IndentCaseLabels": "true", "IndentGotoLabels": "true", "IndentPPDirectives": "AfterHash", "IndentWidth": 4, "IndentWrappedFunctionNames": "true", "KeepEmptyLinesAtTheStartOfBlocks": "false", "MaxEmptyLinesToKeep": 6, "NamespaceIndentation": "All", "PointerAlignment": "Right", "SortIncludes": "false", "SortUsingDeclarations": "false", "SpaceAfterCStyleCast": "true", "SpaceAfterLogicalNot": "true", "SpaceAfterTemplateKeyword": "true", "SpaceBeforeAssignmentOperators": "true", "SpaceBeforeCpp11BracedList": "true", "SpaceBeforeCtorInitializerColon": "false", "SpaceBeforeInheritanceColon": "false", "SpaceBeforeParens": "ControlStatements", "SpaceBeforeRangeBasedForLoopColon": "true", "SpaceBeforeSquareBrackets": "false", "SpaceInEmptyBlock": "false", "SpaceInEmptyParentheses": "false", "SpacesBeforeTrailingComments": 4, "SpacesInAngles": "false", "SpacesInCStyleCastParentheses": "false", "SpacesInConditionalStatement": "false", "SpacesInContainerLiterals": "false", "SpacesInParentheses": "false", "SpacesInSquareBrackets": "false", "TabWidth": 4, "UseCRLF": "false", "UseTab": "Never" }
 
+"vim-gitgutter"
+let g:gitgutter_map_keys = 0
+
 
 
 "=== Key Mapping ==="
@@ -94,6 +97,15 @@ map <silent> <F4> :set expandtab!<CR>
 map <silent> <F5> :ALEPrevious<CR>
 map <silent> <F6> :ALENext<CR>
 
+"vim-gitgutter"
+map <silent> <F7> :GitGutterPrevHunk<CR>
+map <silent> <F8> :GitGutterNextHunk<CR>
+
 "Trim space at end of line"
 map <silent> <F9> :%s/\s\+$//e<CR>
+
+"vim-gitgutter"
+map <silent> <F10> :GitGutterStageHunk<CR>
+map <silent> <F11> :GitGutterUndoHunk<CR>
+map <silent> <F12> :GitGutterPreviewHunk<CR>
 

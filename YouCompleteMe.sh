@@ -9,7 +9,7 @@ cd $HOME/.vim/
 
 if [[ ! -d ./pack/tool/start/YouCompleteMe ]]; then
     echo "Cloning YouCompleteMe"
-    git clone --depth 1 https://github.com/ycm-core/YouCompleteMe ./pack/tool/start/
+    git clone --depth 1 https://github.com/ycm-core/YouCompleteMe ./pack/tool/start/YouCompleteMe
 else
     echo "Found YouCompleteMe!"
 fi

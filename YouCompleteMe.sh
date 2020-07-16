@@ -19,5 +19,6 @@ git pull --depth 1
 git submodule update --depth 1 --init --recursive
 
 if [[ $1 == "build" ]]; then
+    echo "Building YouCompleteMe"
     ./install.py --clang-completer
 fi

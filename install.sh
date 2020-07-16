@@ -18,5 +18,4 @@ fi
 echo "Updating plugin ..."
 cd $HOME/.vim/
 git submodule update --depth 1 --init --remote --recursive
-./YouCompleteMe.sh
 echo "Done!"

@@ -80,6 +80,19 @@ let g:gitgutter_map_keys = 0
 let g:gitgutter_async = 0
 let g:gitgutter_preview_win_floating = 1
 
+"YouCompleteMe"
+let g:ycm_min_num_of_chars_for_completion = 1
+let g:ycm_max_num_candidates = 60
+let g:ycm_max_num_identifier_candidates = 12
+let g:ycm_enable_diagnostic_signs = 0
+let g:ycm_enable_diagnostic_highlighting = 0
+let g:ycm_echo_current_diagnostic = 0
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_disable_for_files_larger_than_kb = 1024
+let g:ycm_clangd_binary_path = '/usr/bin/clangd'
+
 
 
 "=== Key Mapping ==="

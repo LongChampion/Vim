@@ -4,6 +4,7 @@
 - Vim (at least version 8)
 - Git
 - Clang Format (for Vim-Clang-Format plugin)
+- fzf (for fzf-vim plugin)
 - Font Awesome, FuraCode Nerd Font
 
 ## Plugin
@@ -12,6 +13,7 @@
 - [GruvBox](https://github.com/morhetz/gruvbox)
 - [ALE](https://github.com/dense-analysis/ale)
 - [Vim-Clang-Format](https://github.com/rhysd/vim-clang-format)
+- [fzf-vim](https://github.com/junegunn/fzf.vim)
 - [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional)
 
 ## Install

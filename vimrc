@@ -96,17 +96,23 @@ let g:ycm_clangd_binary_path = '/usr/bin/clangd'
 
 
 "=== Key Mapping ==="
-"NERDTree"
-map <silent> <F1> :NERDTreeToggle<CR>
-
 "Toggle wrapping"
-map <silent> <F2> :set wrap!<CR>
+execute "set <A-z>=\ez"
+map <silent> <A-z> :set wrap!<CR>
 
 "Toggle highlight search"
 map <silent> <F3> :set hlsearch!<CR>
 
 "Toogle tab-to-space"
-map <silent> <F4> :set expandtab!<CR>
+execute "set <A-t>=\et"
+map <silent> <A-t> :set expandtab!<CR>
+
+"Trim space at end of line"
+execute "set <A-x>=\ex"
+map <silent> <A-x> :%s/\s\+$//e<CR>
+
+"NERDTree"
+map <silent> <C-E> :NERDTreeToggle<CR>
 
 "ale"
 map <silent> <F5> :ALEPrevious<CR>
@@ -115,18 +121,14 @@ map <silent> <F6> :ALENext<CR>
 "vim-gitgutter"
 map <silent> <F7> :GitGutterPrevHunk<CR>
 map <silent> <F8> :GitGutterNextHunk<CR>
-
-"Trim space at end of line"
-map <silent> <F9> :%s/\s\+$//e<CR>
-
-"vim-gitgutter"
 map <silent> <F10> :GitGutterStageHunk<CR>
 map <silent> <F11> :GitGutterUndoHunk<CR>
 map <silent> <F12> :GitGutterPreviewHunk<CR>
 
-
+"fzf-vim"
+map <silent> <C-O> :Files<CR>
+map <silent> <C-W> :Buffers<CR>
 
 "=== AUTORUN COMMAND ==="
 autocmd InsertLeave * GitGutter
 autocmd TextChanged * GitGutter
-

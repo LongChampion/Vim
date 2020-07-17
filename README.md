@@ -8,10 +8,12 @@
 - Font Awesome, FuraCode Nerd Font
 
 ## Plugin
+- [Auto-Pairs](https://github.com/jiangmiao/auto-pairs)
 - [LightLine](https://github.com/itchyny/lightline.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
-- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+- [Vim-GitGutter](https://github.com/airblade/vim-gitgutter)
 - [GruvBox](https://github.com/morhetz/gruvbox)
+- [Vim-Rainbow](https://github.com/frazrepo/vim-rainbow)
 - [ALE](https://github.com/dense-analysis/ale)
 - [fzf-vim](https://github.com/junegunn/fzf.vim)
 - [Vim-Clang-Format](https://github.com/rhysd/vim-clang-format)

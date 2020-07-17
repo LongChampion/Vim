@@ -30,3 +30,7 @@
 	path = pack/theme/start/vim-rainbow
 	url = https://github.com/frazrepo/vim-rainbow
 	shallow = true
+[submodule "pack/plugin/start/auto-pairs"]
+	path = pack/plugin/start/auto-pairs
+	url = https://github.com/jiangmiao/auto-pairs
+	shallow = true

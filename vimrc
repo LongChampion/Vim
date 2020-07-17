@@ -61,6 +61,9 @@ colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
 highlight CursorLineNr cterm=bold ctermbg=240 ctermfg=14
 
+"vim-rainbow"
+let g:rainbow_active = 1
+
 "ale"
 let g:ale_sign_column_always = 1
 let g:ale_lint_on_text_changed = 1

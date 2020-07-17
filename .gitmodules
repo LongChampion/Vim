@@ -26,3 +26,7 @@
 	path = pack/tool/start/fzf.vim
 	url = https://github.com/junegunn/fzf.vim
 	shallow = true
+[submodule "pack/theme/start/vim-rainbow"]
+	path = pack/theme/start/vim-rainbow
+	url = https://github.com/frazrepo/vim-rainbow
+	shallow = true

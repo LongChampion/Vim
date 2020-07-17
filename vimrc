@@ -36,6 +36,7 @@ set cursorlineopt=number,screenline
 set number
 set relativenumber
 set noshowmode
+set splitbelow
 
 
 

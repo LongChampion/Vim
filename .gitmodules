@@ -22,3 +22,7 @@
 	path = pack/plugin/start/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
 	shallow = true
+[submodule "pack/tool/start/fzf.vim"]
+	path = pack/tool/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+	shallow = true

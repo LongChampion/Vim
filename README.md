@@ -10,10 +10,11 @@
 ## Plugin
 - [LightLine](https://github.com/itchyny/lightline.vim)
 - [NERDTree](https://github.com/preservim/nerdtree)
+- [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 - [GruvBox](https://github.com/morhetz/gruvbox)
 - [ALE](https://github.com/dense-analysis/ale)
-- [Vim-Clang-Format](https://github.com/rhysd/vim-clang-format)
 - [fzf-vim](https://github.com/junegunn/fzf.vim)
+- [Vim-Clang-Format](https://github.com/rhysd/vim-clang-format)
 - [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) (optional)
 
 ## Install

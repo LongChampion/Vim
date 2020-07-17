@@ -23,6 +23,7 @@ set smartcase
 
 
 "=== Text Rendering Options ==="
+syntax on
 set encoding=utf-8
 
 
@@ -34,11 +35,11 @@ set cursorline
 set cursorlineopt=number,screenline
 set number
 set relativenumber
+set noshowmode
 
 
 
 "=== Miscellaneous Options ==="
-syntax on
 set autochdir
 set autoread
 set autowrite
@@ -50,6 +51,11 @@ set nowrap
 
 
 "=== Plugin Options ==="
+"vim-gitgutter"
+let g:gitgutter_map_keys = 0
+let g:gitgutter_async = 0
+let g:gitgutter_preview_win_floating = 1
+
 "Theme: gruvbox"
 colorscheme gruvbox
 let g:gruvbox_contrast_dark = 'hard'
@@ -74,11 +80,6 @@ let g:clang_format#auto_format = 1
 let g:clang_format#auto_format_on_insert_leave = 1
 let g:clang_format#command = '/usr/bin/clang-format'
 let g:clang_format#style_options = { "BasedOnStyle": "LLVM", "Language": "Cpp", "Standard": "Latest", "AccessModifierOffset": -2, "AlignConsecutiveAssignments": "true", "AlignConsecutiveMacros": "true", "AlignEscapedNewlines": "Left", "AlignTrailingComments": "true", "AllowShortBlocksOnASingleLine": "Always", "AllowShortCaseLabelsOnASingleLine": "true", "AllowShortFunctionsOnASingleLine": "All", "AllowShortIfStatementsOnASingleLine": "true", "AllowShortLoopsOnASingleLine": "true", "AlwaysBreakAfterReturnType": "None", "BreakBeforeBraces": "Allman", "BreakStringLiterals": "false", "ColumnLimit": 0, "ContinuationIndentWidth": 4, "Cpp11BracedListStyle": "true", "DeriveLineEnding": "false", "DerivePointerAlignment": "false", "FixNamespaceComments": "true", "IndentCaseLabels": "true", "IndentGotoLabels": "true", "IndentPPDirectives": "AfterHash", "IndentWidth": 4, "IndentWrappedFunctionNames": "true", "KeepEmptyLinesAtTheStartOfBlocks": "false", "MaxEmptyLinesToKeep": 6, "NamespaceIndentation": "All", "PointerAlignment": "Right", "SortIncludes": "false", "SortUsingDeclarations": "false", "SpaceAfterCStyleCast": "true", "SpaceAfterLogicalNot": "true", "SpaceAfterTemplateKeyword": "true", "SpaceBeforeAssignmentOperators": "true", "SpaceBeforeCpp11BracedList": "true", "SpaceBeforeCtorInitializerColon": "false", "SpaceBeforeInheritanceColon": "false", "SpaceBeforeParens": "ControlStatements", "SpaceBeforeRangeBasedForLoopColon": "true", "SpaceBeforeSquareBrackets": "false", "SpaceInEmptyBlock": "false", "SpaceInEmptyParentheses": "false", "SpacesBeforeTrailingComments": 4, "SpacesInAngles": "false", "SpacesInCStyleCastParentheses": "false", "SpacesInConditionalStatement": "false", "SpacesInContainerLiterals": "false", "SpacesInParentheses": "false", "SpacesInSquareBrackets": "false", "TabWidth": 4, "UseCRLF": "false", "UseTab": "Never" }
-
-"vim-gitgutter"
-let g:gitgutter_map_keys = 0
-let g:gitgutter_async = 0
-let g:gitgutter_preview_win_floating = 1
 
 "YouCompleteMe"
 let g:ycm_min_num_of_chars_for_completion = 1

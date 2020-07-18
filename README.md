@@ -21,7 +21,7 @@
 
 ## Install
 - Clone this repository to `$HOME/.vim`
-    > git clone https://github.com/LongChampion/Vim.git $HOME/.vim/
+    > git clone --depth 1 https://github.com/LongChampion/Vim.git $HOME/.vim/
 - Run `install.sh` inside `.vim` directory
     > $HOME/.vim/install.sh
 - If you want to install YouCompleteMe plugin, run the given script:
@@ -29,4 +29,4 @@
 
 ## Usage
 You can open `vim` in your terminal now. Everything has been setup for you.  
-You can use `install.sh` and `YouCompleteMe.sh' to update plugins as well.
+You can use `install.sh` and `YouCompleteMe.sh` to update plugins as well.

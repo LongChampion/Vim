@@ -103,37 +103,38 @@ let g:ycm_clangd_binary_path = '/usr/bin/clangd'
 "=== Key Mapping ==="
 "Toggle wrapping"
 execute "set <A-z>=\ez"
-map <silent> <A-z> :set wrap!<CR>
+map <A-z> :set wrap!<CR>
 
 "Toggle highlight search"
-map <silent> <F3> :set hlsearch!<CR>
+map <F3> :set hlsearch!<CR>
 
 "Toogle tab-to-space"
 execute "set <A-t>=\et"
-map <silent> <A-t> :set expandtab!<CR>
+map <A-t> :set expandtab!<CR>
 
 "Trim space at end of line"
 execute "set <A-x>=\ex"
-map <silent> <A-x> :%s/\s\+$//e<CR>
+map <A-x> :%s/\s\+$//e<CR>
 
 "NERDTree"
-map <silent> <C-E> :NERDTreeToggle<CR>
+map <C-E> :NERDTreeToggle<CR>
 
 "ale"
-map <silent> <F5> :ALEPrevious<CR>
-map <silent> <F6> :ALENext<CR>
+map <F5> :ALEPrevious<CR>
+map <F6> :ALENext<CR>
 
 "vim-gitgutter"
-map <silent> <F7> :GitGutterPrevHunk<CR>
-map <silent> <F8> :GitGutterNextHunk<CR>
-map <silent> <F10> :GitGutterStageHunk<CR>
-map <silent> <F11> :GitGutterUndoHunk<CR>
-map <silent> <F12> :GitGutterPreviewHunk<CR>
+map <F7> :GitGutterPrevHunk<CR>
+map <F8> :GitGutterNextHunk<CR>
+map <F10> :GitGutterStageHunk<CR>
+map <F11> :GitGutterUndoHunk<CR>
+map <F12> :GitGutterPreviewHunk<CR>
 
 "fzf-vim"
-map <silent> <C-O> :Files<CR>
-map <silent> <C-W> :Buffers<CR>
+map <C-O> :Files<CR>
+map <C-W> :Buffers<CR>
 
 "=== AUTORUN COMMAND ==="
 autocmd InsertLeave * GitGutter
 autocmd TextChanged * GitGutter
+

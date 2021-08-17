@@ -137,3 +137,4 @@ map <C-W> :Buffers<CR>
 "=== AUTORUN COMMAND ==="
 autocmd InsertLeave * GitGutter
 autocmd TextChanged * GitGutter
+

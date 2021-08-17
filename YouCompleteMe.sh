@@ -22,3 +22,4 @@ if [[ $1 == "build" ]]; then
     echo "Building YouCompleteMe"
     ./install.py --clang-completer
 fi
+
